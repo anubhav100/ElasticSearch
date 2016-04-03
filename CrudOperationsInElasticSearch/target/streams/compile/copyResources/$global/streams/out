@@ -1,0 +1,3 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/knoldus/Downloads/CrudOperationsInElasticSearch/src/main/resources/bulk.json,/home/knoldus/Downloads/CrudOperationsInElasticSearch/target/scala-2.11/classes/bulk.json)[0m
+[0m[[0mdebug[0m] [0m	(/home/knoldus/Downloads/CrudOperationsInElasticSearch/src/main/resources/output.json,/home/knoldus/Downloads/CrudOperationsInElasticSearch/target/scala-2.11/classes/output.json)[0m

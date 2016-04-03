@@ -1,0 +1,46 @@
+[0m[[0minfo[0m] [0mRunning com.knoldus.elasticsearch.CrudOnElasticSearch [0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/Downloads/CrudOperationsInElasticSearch/target/scala-2.11/classes[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.elasticsearch/elasticsearch/jars/elasticsearch-1.5.2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-core/jars/lucene-core-4.10.4.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-analyzers-common/jars/lucene-analyzers-common-4.10.4.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-queries/jars/lucene-queries-4.10.4.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-memory/jars/lucene-memory-4.10.4.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-highlighter/jars/lucene-highlighter-4.10.4.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-queryparser/jars/lucene-queryparser-4.10.4.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-sandbox/jars/lucene-sandbox-4.10.4.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-suggest/jars/lucene-suggest-4.10.4.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-misc/jars/lucene-misc-4.10.4.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-join/jars/lucene-join-4.10.4.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-grouping/jars/lucene-grouping-4.10.4.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-spatial/jars/lucene-spatial-4.10.4.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/com.spatial4j/spatial4j/bundles/spatial4j-0.4.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.antlr/antlr-runtime/jars/antlr-runtime-3.5.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.ow2.asm/asm/jars/asm-4.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/.ivy2/cache/org.ow2.asm/asm-commons/jars/asm-commons-4.1.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[31merror[0m] [0m(run-main-0) org.elasticsearch.index.mapper.MapperParsingException: mapping [twttes][0m
+org.elasticsearch.index.mapper.MapperParsingException: mapping [twttes]
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$2.execute(MetaDataCreateIndexService.java:395)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:365)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.mapper.MapperParsingException: Root type mapping not empty after parsing! Remaining fields:   [twittes : {_timestamp={path=post_date, store=true, enabled=true}}]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:278)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:192)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:434)
+	at org.elasticsearch.index.mapper.MapperService.merge(MapperService.java:307)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$2.execute(MetaDataCreateIndexService.java:392)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:365)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread elasticsearch[Joe Cartelli][master_mapping_updater] to terminate.[0m
